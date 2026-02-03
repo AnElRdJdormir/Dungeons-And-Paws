@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuración de Sonido</title>
+    <link rel="stylesheet" href="css/Configuracion.css">
+    <link rel="icon" href="css/img/paw.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <h1>Configuración de Sonido</h1>
+        <div class="menu-overlay">
+            <ul class="menu">
+                <div class="Volumen-tira">
+                    <label for="volume">Volumen:</label>
+                    <input type="range" id="volume" min="0" max="100" value="50" step="1" oninput="updateVolume()">
+                </div>
+                <div class="cambios">
+                    <li><a href="#" onclick="applyChanges()">Aplicar Cambios</a></li>
+                </div>
+                <div class="Restablecer">
+                    <li><a href="#" onclick="resetToDefault()">Restablecer Predeterminado</a></li>
+                </div>
+                <div class="volver">
+                    <li><a href="index.html">Volver</a></li>
+                </div>
+            </ul>
+        </div>
+    </div>
+
+    <script src="audioManager.js"></script>
+    <script>
+        var defaultVolume = 50;
+
+        document.addEventListener('DOMContentLoaded', (event) => {
+            var storedVolume = localStorage.getItem('volume');
+            document.getElementById('volume').value = storedVolume ? storedVolume * 100 : defaultVolume;
+        });
+
+        function updateVolume() {
+            var volumeValue = document.getElementById('volume').value;
+            console.log('Volumen actual: ' + volumeValue);
+            audioManager.setVolume(volumeValue);
+        }
+
+        function applyChanges() {
+            alert('Cambios aplicados correctamente.');
+        }
+
+        function resetToDefault() {
+            document.getElementById('volume').value = defaultVolume;
+            updateVolume();
+            alert('Configuración restablecida a los valores predeterminados.');
+        }
+    </script>
+</body>
+</html>

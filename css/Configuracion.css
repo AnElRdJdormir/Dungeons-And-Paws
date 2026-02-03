@@ -1,0 +1,73 @@
+body {
+    background-image: url('https://images.alphacoders.com/135/1358736.png'); /* Ruta a tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-image: url('https://static.vecteezy.com/system/resources/thumbnails/022/556/523/small_2x/simple-minimalist-retro-color-trendy-background-abstract-colorful-wallpaper-and-backdrop-artistic-digital-art-3d-rendering-geometric-line-stripe-bar-element-design-material-photo.jpg'); /* Ruta a tu imagen de fondo */
+    background-color: rgba(255, 255, 255, 0.5);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+select, input {
+    margin-top: 5px;
+}
+
+.Volumen-tira{
+    background-image: url('https://img.freepik.com/vector-gratis/fondo-acuarela-abstracta-acuarela-pintada-mano_361591-2796.jpg?size=626&ext=jpg&ga=GA1.1.1788068356.1716076800&semt=ais_user'); /* Ruta a tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+}
+
+.menu{
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu div{
+    margin-bottom: 25px;
+    background-image: url("https://img.freepik.com/vector-gratis/fondo-acuarela-abstracta-acuarela-pintada-mano_361591-2796.jpg?size=626&ext=jpg&ga=GA1.1.1788068356.1716076800&semt=ais_user");
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+.menu a{
+    display: block; /* Convertir los enlaces en bloques para ocupar todo el ancho */
+    text-decoration: none;
+    color: #000;
+    font-size: 25px;
+    transition: color 0.3s ease;
+}
+
+.menu li a{
+    display: block; /* Convertir los enlaces en bloques para ocupar todo el ancho */
+    text-decoration: none;
+    color: #000;
+    font-size: 25px;
+    transition: color 0.3s ease;
+}
+
+.menu li a:hover{
+    color: #2813ea;
+}

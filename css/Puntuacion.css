@@ -1,0 +1,79 @@
+body {
+    background-image: url("https://moewalls.com/wp-content/uploads/2023/04/furry-lofi-study-break-thumb.jpg");
+    background-size: cover;
+    background-position: center;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    margin-top: 50px;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+  
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+    margin: 80px auto; 
+    
+}
+
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+select, input {
+    margin-top: 5px;
+}
+
+.menu{
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu .JugadorPuntuacion{
+    margin-bottom: 10px;
+    background-image: url("https://cdn.pixabay.com/photo/2016/03/31/18/17/bone-1294260_960_720.png");
+    background-size: cover;
+   
+    background-position: center;
+    padding: 50px;
+}
+
+.menu a{
+    display: block; /* Convertir los enlaces en bloques para ocupar todo el ancho */
+    text-decoration: none;
+    color: #000;
+    font-size: 25px;
+    transition: color 0.3s ease;
+}
+
+.menu li a{
+    display: block; /* Convertir los enlaces en bloques para ocupar todo el ancho */
+    text-decoration: none;
+    color: #000;
+    font-size: 25px;
+    transition: color 0.3s ease;
+}
+
+.menu li a:hover{
+    color: #6d1bd1;
+}
+
+.volver{
+    margin-bottom: 25px;
+    background-image: url("https://img.freepik.com/vector-gratis/fondo-acuarela-abstracta-acuarela-pintada-mano_361591-2796.jpg?size=626&ext=jpg&ga=GA1.1.1788068356.1716076800&semt=ais_user");
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+}

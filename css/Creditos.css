@@ -1,0 +1,61 @@
+body {
+    background-image: url("img/Design.png");
+
+    background-size:auto;
+    background-position: center;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container {
+   
+    background-color:rgba(57, 30, 193, 0.5);
+}
+
+.menu-overlay {
+
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    background-color:rgba(163, 160, 180, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+section {
+    margin: 20px;
+    text-align: center;
+}
+
+
+.Creadores h2 p{
+    display: block;
+    text-decoration: none;
+    color: #000;
+    font-size: 25px;
+    transition: color 0.3s ease;
+    margin-top: 0px;
+}
+
+.menu li a{
+    display: block; /* Convertir los enlaces en bloques para ocupar todo el ancho */
+    text-decoration: none;
+    color: #000;
+    font-size: 25px;
+    transition: color 0.3s ease;
+}
+
+.menu li a:hover{
+    color: #FF5733;
+}
+
+.volver{
+    margin-bottom: 25px;
+    background-image: url("https://img.freepik.com/vector-gratis/fondo-acuarela-abstracta-acuarela-pintada-mano_361591-2796.jpg?size=626&ext=jpg&ga=GA1.1.1788068356.1716076800&semt=ais_user");
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+}

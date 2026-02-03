@@ -1,0 +1,26 @@
+window.onload = function () {
+    loadScores();
+};
+
+function loadScores() {
+    var scoreList = document.getElementById('scoreList');
+    scoreList.innerHTML = '';
+
+    // Obtener puntuaciones del almacenamiento local
+    var scores = JSON.parse(localStorage.getItem('scores')) || [];
+
+    // Mostrar puntuaciones en la lista
+    scores.forEach(function (score) {
+        var listItem = document.createElement('li');
+        listItem.textContent = score;
+        scoreList.appendChild(listItem);
+    });
+}
+
+function clearScores() {
+    // Limpiar puntuaciones en el almacenamiento local
+    localStorage.removeItem('scores');
+
+    // Recargar la lista de puntuaciones
+    loadScores();
+}
